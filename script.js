@@ -1,8 +1,9 @@
-//your JS code here. If required.
-let count=0
+let count = 0;
+
 function SubmitBtn() {
-	let counter = document.getElementById("counter");
-	alert(count);
-	count++;
-	counter.textContent = `${count+1}`
+    alert(count);
+    count++;
+    document.getElementById("counter").textContent = count;
 }
+
+document.getElementById("incrementBtn").addEventListener("click", SubmitBtn);
